@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="Insurance_1PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>insurance.Damage_1</class>
+    <class>insurance.Vacation</class>
+    <class>insurance.Riterment</class>
+    <class>insurance.Payment</class>
+    <class>insurance.PayForEmp</class>
+    <class>insurance.Compensation</class>
+    <class>insurance.Department</class>
+    <class>insurance.InsuranceAccount</class>
+    <class>insurance.Memsignup</class>
+    <class>insurance.Employee</class>
+    <class>insurance.EmpPasswords</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:orcl"/>
+      <property name="javax.persistence.jdbc.user" value="Project"/>
+      <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+      <property name="javax.persistence.jdbc.password" value="raed"/>
+    </properties>
+  </persistence-unit>
+</persistence>
